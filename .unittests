@@ -2,7 +2,7 @@
 
 TOP_DIR=$(dirname $(realpath "$0"))
 
-cd $TOP_DIR/test/unit
+cd $TOP_DIR/test/unit/common
 python3 -m nose --exe --no-skip --with-coverage --cover-package swift --cover-erase --cover-branches --cover-html --cover-html-dir="$TOP_DIR"/cover $@
 rvalue=$?
 rm -f .coverage
